@@ -1,10 +1,10 @@
+import { yupResolver } from "@hookform/resolvers/yup";
 import { useForm } from "react-hook-form";
+import * as yup from "yup";
 import Button from "../../components/Button";
 import Input from "../../components/Input";
-import { yupResolver } from "@hookform/resolvers/yup";
-import * as yup from "yup";
 
-import { Container, LoginContainer, Column, Spacing, Title } from "./styles";
+import { Column, Container, LoginContainer, Spacing, Title } from "./styles";
 import { defaultValues, IFormLogin } from "./types";
 
 const schema = yup
@@ -19,6 +19,7 @@ const schema = yup
 
 const Login = () => {
   const {
+    watch,
     control,
     formState: { errors, isValid },
   } = useForm<IFormLogin>({
@@ -27,6 +28,8 @@ const Login = () => {
     defaultValues,
     reValidateMode: "onChange",
   });
+
+  console.log(watch());
 
   return (
     <Container>
