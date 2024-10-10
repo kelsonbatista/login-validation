@@ -2,6 +2,10 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Layout
+
+![Layout](./assets/layout.jpg)
+
 ## Available Scripts
 
 In the project directory, you can run:
