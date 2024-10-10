@@ -4,7 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Layout
 
-![Layout](./assets/layout)
+![Layout](./src/assets/layout.jpg)
 
 ## Available Scripts
 
